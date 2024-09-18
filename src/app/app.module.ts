@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,7 @@ import { CardProductComponent } from './components/card-product/card-product.com
 import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { AboutComponent } from './components/about/about.component';
     CardProductComponent,
     CatalogoComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
